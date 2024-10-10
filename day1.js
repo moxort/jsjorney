@@ -1,3 +1,5 @@
+//Day1
+
 // comments can make code more readable
 // Welcome to js
 /*
