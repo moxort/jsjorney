@@ -154,7 +154,7 @@ console.log(string.indexOf('JavaScript')) // 11
 console.log(string.indexOf('Script'))     //15
 console.log(string.indexOf('script'))     // -1*/
 
-let string = 'I love JavaScript. If you do not love JavaScript what else can you love.'
+// let string = 'I love JavaScript. If you do not love JavaScript what else can you love.'
 
 // console.log(string.indexOf('love'))       // 67
 // console.log(string.lastIndexOf('you'))        // 63
@@ -175,12 +175,89 @@ let string = 'I love JavaScript. If you do not love JavaScript what else can you
 // console.log(string.match(/love/g))          // 2
 // console.log(string.match(/love/))          // 2
 
-let txt = 'In 2019, I ran 30 Days of Python. Now, in 2020 I am super exited to start this challenge'
-let regEx = /\d+/
+// let txt = 'In 2019, I ran 30 Days of Python. Now, in 2020 I am super exited to start this challenge'
+// let regEx = /\d+/
 
 // d with escape character means d not a normal d instead acts a digit
 // + means one or more digit numbers,
 // if there is g after that it means global, search everywhere.
 
-console.log(txt.match(regEx))  // ["2", "0", "1", "9", "3", "0", "2", "0", "2", "0"]
-console.log(txt.match(/\d+/g)) // ["2019", "30", "2020"]
+// console.log(txt.match(regEx))  // ["2", "0", "1", "9", "3", "0", "2", "0", "2", "0"]
+// console.log(txt.match(/\d+/g)) // ["2019", "30", "2020"]
+
+// let love = 'love '
+// console.log(love.repeat(10))
+//
+// let num ='10'
+// console.warn(num, typeof num)
+//
+// console.log(parseInt(num))
+// console.log(Number(num))
+// let numInt = +num
+// console.log(numInt)
+
+// x = x+ 5
+// console.log(x)
+
+// let y = 2+3+5
+// console.log(y , typeof y)
+// let z = 2 +'3'+5
+// console.log(z, typeof z)
+// let a = '2' +3+5
+// console.log(a, typeof a)
+
+// let num = '9.81'
+// console.log(parseFloat(num), Number(num), +num)
+
+//Exercises
+let challenge = '30 Days Of JavaScript'
+// console.log(challenge)
+// console.log(challenge.length)
+// console.log(challenge.toUpperCase())
+// console.log(challenge.toLowerCase())
+// console.log(challenge.substring(0, 6))
+// console.log(challenge.slice(2, challenge.length))
+// console.log(challenge.includes('Script'))
+// console.log(challenge.split(''))
+// let faang =  'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+// console.log(faang.split(','))
+// console.log(challenge.replace('JavaScript', 'Python'))
+// console.log(challenge.charAt(15))
+// console.log(challenge.lastIndexOf('a'))
+// console.log(challenge.charCodeAt(challenge.indexOf('J')))
+let sent = 'You cannot end a sentence with because because because is a conjunction'
+// console.log(sent.split(''))
+// console.log(sent.indexOf('because'))
+// console.log(sent.lastIndexOf('because'))
+// console.log(sent.search('because'))
+// console.log(challenge.trim())
+// console.log(challenge.startsWith('30'))
+// console.log(challenge.endsWith('Script'))
+// console.log(challenge.match(/a/g))
+// console.log(challenge.concat(' with me', ' and you'))
+// console.log(challenge.repeat(2))
+
+//Level 2
+// let quote = 'The quote \'There is no exercise better for the heart than reaching down and lifting people up.\' by John Holmes teaches us to help one another.'
+// console.log(quote)
+// let quote2 = "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead"
+// console.log(quote2)
+//
+// console.log(typeof 10, typeof '10')
+// console.log(parseFloat('9.8'))
+// console.log(Math.ceil(parseFloat('9.8')))
+// console.log(Math.ceil(parseFloat('9.8'))  == 10)
+
+// let min = 0, max = 255
+// let number = Math.random()*(max - min +1) +min
+// console.log(number)
+//Level 3
+// let quote  = 'Love is the best thing in this world. Some found their love and some are still looking for their love.'
+// console.log(quote.match(/love/g).length)
+// console.log(sent.match(/because/g).length)
+//
+// const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+// console.log(sentence.replace(/[%$@#&;]/g, ""))
+const numberSent = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+let numbers  = numberSent.match(/\d+/g)
+console.log(parseInt(numbers[0]) + parseInt(numbers[1]) + parseInt(numbers[2]))

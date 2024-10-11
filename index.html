@@ -4,12 +4,20 @@
     <title>30DaysOfJavaScript:External script</title>
 </head>
 <body>
+<h1 id="heading">My First Web Page</h1>
+<p>My first paragraph.</p>
 <button onclick="alert('Welcome to 30DaysOfJavaScript!');">Click Me</button>
+<button onclick="document.getElementById('heading').innerHTML = 'wow' "> Change header</button>
+
 <!--https://github.com/Asabeneh/30-Days-Of-JavaScript/tree/master-->
 <!-- JavaScript external link could be in the header or in the body -->
 <!-- Before the closing tag of the body is the recommended place to put the external JavaScript script -->
 
 <!--<script src="day1.js"></script>-->
+<script>
+    let headerText = "WOW, this is so cool"
+    document.getElementById('heading').innerHTML = headerText
+</script>
 <script src="day2.js"></script>
 </body>
 </html>
